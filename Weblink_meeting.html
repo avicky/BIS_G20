@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequential Redirection</title>
+    <script>
+        // Function to redirect based on the current day
+        function redirectToCorrectLink() {
+            var currentDate = new Date();
+            var dayOfMonth = currentDate.getDate();
+
+            // Change these links based on the days you want to redirect
+            if (dayOfMonth === 27) {
+                window.location.href = 'https://bismanak.webex.com/bismanak/j.php?MTID=m030082ab60ad8d640ed52d3525c93889';
+            } else {
+                window.location.href = 'https://bismanak.webex.com/bismanak/j.php?MTID=m264246c98424bdac70a36870cf4934db';
+            }
+        }
+    </script>
+</head>
+<body onload="redirectToCorrectLink()">
+    <!-- You can include content here if needed -->
+</body>
+</html>
